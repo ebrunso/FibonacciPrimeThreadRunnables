@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/etString"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter a String to Reverse"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvReverseString"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Output of Reversed String"
+        app:layout_constraintTop_toBottomOf="@+id/etString"
+        app:layout_constraintStart_toEndOf="@+id/etString"/>
+
+    <Button
+        android:id="@+id/btnStartThread"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reverse String"
+        android:onClick="onClick"
+        app:layout_constraintTop_toBottomOf="@+id/tvReverseString"
+        app:layout_constraintStart_toEndOf="@+id/tvReverseString"/>
+
+    <EditText
+        android:id="@+id/etRangeM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Range to Start"
+        app:layout_constraintTop_toBottomOf="@+id/btnStartThread"
+        app:layout_constraintStart_toEndOf="@+id/btnStartThread"/>
+
+    <EditText
+        android:id="@+id/etRangeN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Range to End"
+        app:layout_constraintTop_toBottomOf="@+id/etRangeM"
+        app:layout_constraintStart_toEndOf="@+id/etRangeM"/>
+
+    <Button
+        android:id="@+id/btnFindPrimes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Find Primes within Range"
+        android:onClick="onClick"
+        app:layout_constraintTop_toBottomOf="@+id/etRangeN"
+        app:layout_constraintStart_toEndOf="@+id/etRangeN"/>
+
+    <TextView
+        android:id="@+id/tvPrimeResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Prime Result Data Output"
+        app:layout_constraintTop_toBottomOf="@+id/btnFindPrimes"
+        app:layout_constraintStart_toEndOf="@+id/btnFindPrimes"/>
+
+    <Button
+        android:id="@+id/btnFibonacci"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Find first 20 Fibonacci sequence"
+        android:onClick="onClick"
+        app:layout_constraintTop_toBottomOf="@+id/tvPrimeResult"
+        app:layout_constraintStart_toEndOf="@+id/tvPrimeResult"/>
+
+    <TextView
+        android:id="@+id/tvFiboResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Fibonacci Result Data Output"
+        app:layout_constraintTop_toBottomOf="@+id/btnFibonacci"
+        app:layout_constraintStart_toEndOf="@+id/btnFibonacci"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,7 @@
+1. Use Java Thread/Runnables to reverse a string entered by user and populate a text view with results
+2. Use AsyncTask to find all prime numbers between n and m
+3. Use a looper to calculate the Fibonacci sequence unto the 20th iteration
+4. Polish Cover Letters as much as possible
+
+
+DUE DATE Feb 19, 2020 at 7:59am ET
